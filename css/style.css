@@ -30,11 +30,29 @@ ul {
   --water-point-label: #79898b22;
   --settlement-label: #6b6b6b22;
   --animation-delay: 1s;
+  /* Grid customization variables */
+  --grid-color: rgba(
+    62,
+    123,
+    180,
+    0.1
+  ); /* Matches the accent color with low opacity */
+  --grid-size-horizontal: 50px; /* Horizontal line spacing */
+  --grid-size-vertical: 50px; /* Vertical line spacing */
+  --grid-line-width: 1px; /* Line thickness */
 }
 
 body {
   margin: 0;
   overflow: hidden;
+  background-color: #1b1d20;
+  background-image: 
+    linear-gradient(to right, var(--grid-color) var(--grid-line-width), transparent var(--grid-line-width)),
+    linear-gradient(to bottom, var(--grid-color) var(--grid-line-width), transparent var(--grid-line-width));
+  background-size: 
+    var(--grid-size-horizontal) var(--grid-size-vertical);
+  min-height: 100vh;
+  background-position: center;
 }
 
 .desktop-1 {
@@ -49,6 +67,7 @@ body {
   width: 100%;
   position: relative;
   overflow: visible;
+  background: transparent !important;
 }
 
 .vector {
@@ -60,12 +79,12 @@ body {
   opacity: 0;
   filter: blur(10px);
   transform: translateY(-2px) !important;
-  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards var(--animation-delay);
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards
+    var(--animation-delay);
 }
 
 .season-2025 {
-  background: linear-gradient(to left, rgba(251, 250, 248, 0.1), rgba(251, 250, 248, 0.1)),
-    linear-gradient(to left, rgba(62, 123, 180, 0.5), rgba(62, 123, 180, 0.5));
+  background: rgba(62, 123, 180, 0.7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,15 +98,15 @@ body {
   opacity: 0;
   filter: blur(8px);
   transform: translateY(15px);
-  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards calc(var(--animation-delay) + 0.3s);
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards
+    calc(var(--animation-delay) + 0.3s);
   width: 100%;
   padding: 0 0;
   margin-top: 3px;
 }
 
 .instagram-link {
-  background: linear-gradient(to left, rgba(251, 250, 248, 0.1), rgba(251, 250, 248, 0.1)),
-    linear-gradient(to left, rgba(62, 123, 180, 0.5), rgba(62, 123, 180, 0.5));
+  background: rgba(62, 123, 180, 0.5);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101,9 +120,29 @@ body {
   opacity: 0;
   filter: blur(8px);
   transform: translateY(15px);
-  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards calc(var(--animation-delay) + 0.6s);
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards
+    calc(var(--animation-delay) + 0.6s);
   text-decoration: none;
   margin-top: 19px;
+}
+
+.imprint {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-family: "HelveticaNowDisplay-Bold", sans-serif;
+  font-size: 14px;
+  color: rgba(62, 123, 180, 0.5);
+}
+
+.imprint a {
+  color: rgba(62, 123, 180, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.imprint a:hover {
+  color: rgba(62, 123, 180, 1);
 }
 
 @keyframes fadeInUp {
@@ -148,3 +187,4 @@ body {
     font-size: 16px;
   }
 }
+
