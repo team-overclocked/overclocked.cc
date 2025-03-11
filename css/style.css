@@ -19,16 +19,16 @@ ul {
 }
 
 :root {
-  --background: #f6f6f4;
+  --background: #f4f5f62f;
   --landcover: rgba(227, 227, 227, 0.1);
-  --water-shadow: #b5bebf;
-  --water: #cad2d3;
+  --water-shadow: #b5bebf08;
+  --water: #cad2d31c;
   --hillshade: rgba(255, 255, 255, 0.04);
   --admin-0-boundary-bg: rgba(214, 214, 214, 0);
-  --admin-0-boundary: #9e9e9e;
-  --admin-0-boundary-disputed: #9e9e9e;
-  --water-point-label: #79898b;
-  --settlement-label: #6b6b6b;
+  --admin-0-boundary: #9e9e9e22;
+  --admin-0-boundary-disputed: #9e9e9e22;
+  --water-point-label: #79898b22;
+  --settlement-label: #6b6b6b22;
   --animation-delay: 1s;
 }
 
