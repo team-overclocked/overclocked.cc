@@ -112,9 +112,9 @@ body {
   -webkit-text-fill-color: transparent;
   text-align: left;
   font-family: "HelveticaNowDisplay-Bold", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
-  letter-spacing: -0.06em;
+  
   font-weight: 700;
   position: relative;
   opacity: 0;
@@ -123,7 +123,16 @@ body {
   animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards
     calc(var(--animation-delay) + 0.6s);
   text-decoration: none;
-  margin-top: 19px;
+  margin-top: 24px;
+  transform: translateY(-2px) !important;
+  transition: 0.3s ease;
+}
+
+.instagram-link:hover {
+  background: rgba(62, 123, 180, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+
 }
 
 .imprint {
