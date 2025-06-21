@@ -111,60 +111,6 @@ body {
   margin-top: 3px;
 }
 
-.icon-bubble,
-.icon-bubble * {
-  box-sizing: border-box;
-}
-
-.icon-bubble {
-  background: linear-gradient(
-    90deg,
-    rgba(89, 183, 74, 1) 0%,
-    rgba(37, 175, 249, 1) 33.33333432674408%,
-    rgba(233, 87, 205, 1) 66.66666865348816%,
-    rgba(245, 141, 57, 1) 100%
-  );
-  border-radius: 1000px;
-  padding: 16.8px 28.8px 16.8px 28.8px;
-  display: flex;
-  flex-direction: row;
-  gap: 9.9px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15),
-    inset 1.5px 3.75px 0px 0px rgba(255, 255, 255, 0.2),
-    inset -1.5px -3.75px 0px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  filter: blur(8px);
-  transform: translateY(15px);
-  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards
-    calc(var(--animation-delay) + 0.3s);
-  margin-top: 24px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  text-decoration: none;
-}
-
-.icon-bubble:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 9.6px 18px 0px rgba(0, 0, 0, 0.2),
-    inset 1.5px 3.75px 0px 0px rgba(255, 255, 255, 0.3),
-    inset -1.5px -3.75px 0px 0px rgba(0, 0, 0, 0.3);
-}
-
-.icon-bubble .text {
-  color: #ffffff;
-  text-align: center;
-  font-family: "HelveticaNowDisplay-Bold", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: -0.06em;
-  font-weight: 700;
-  position: relative;
-}
-
 .instagram-link {
   background: rgba(255, 255, 255, 0.5);
   background-clip: text;
@@ -236,15 +182,6 @@ body {
     font-size: 24px;
   }
 
-  .icon-bubble {
-    padding: 14px 24px;
-    margin-top: 20px;
-  }
-
-  .icon-bubble .text {
-    font-size: 20px;
-  }
-
   .instagram-link {
     font-size: 20px;
   }
@@ -258,15 +195,6 @@ body {
 
   .season-2025 {
     font-size: 20px;
-  }
-
-  .icon-bubble {
-    padding: 12px 20px;
-    margin-top: 16px;
-  }
-
-  .icon-bubble .text {
-    font-size: 18px;
   }
 
   .instagram-link {
